@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.viewLyaout {
+  background: #ffffff;
+  box-shadow: 0px 16px 24px rgba(196, 205, 215, 0.48);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 24px;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+}
+body {
+  height: 148px;
+  width: 320px;
+}
+
+.App-link {
+  color: #61dafb;
+}

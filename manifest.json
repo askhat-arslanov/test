@@ -1,0 +1,27 @@
+{
+  "name": "Cordless Click-To-Call",
+  "version": "0.0.3",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Open the popup",
+    "default_icon": "public/icon200.png"
+  },
+  "description": "Click-to-Call numbers directly from your CRM or any web page.",
+  "icons": {
+    "16": "public/icon16.png",
+    "48": "public/icon48.png",
+    "128": "public/icon128.png",
+    "200": "public/icon200.png"
+  },
+  "permissions": ["activeTab", "scripting", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "exclude_matches": ["https://app.cordless.io/**", "http://localhost/**"],
+      "js": ["./content.js"],
+      "all_frames": true,
+      "run_at": "document_end"
+    }
+  ]
+}
