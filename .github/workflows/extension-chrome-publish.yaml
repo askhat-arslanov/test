@@ -14,7 +14,6 @@ jobs:
 
       - name: Build
         run: |-
-          npm run build:chrome-ext
           zip -r chrome-extension-${{ github.event.pull_request.head.sha }}.zip src
 
       - name: Archive chrome-extension artifact
